@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("progress.css");
+@import '~font-awesome/css/font-awesome.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #E9D5DA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #610C63;
+}
+
+.screen {
+    cursor: pointer;
+    width: 60%;
+    background-color: #000 !important;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.controls {
+    width: 60%;
+    background: #fff;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.controls .fa-play {
+    color: #610C63;
+}
+
+.controls .fa-stop {
+    color: #FF5E78;
+}
+
+.controls .fa-pause {
+    color: #610C63;
+}
+
+.controls .timestamp {
+    color: #610C63;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+@media(max-width: 800px) {
+    .screen, 
+    .controls {
+        width: 90%;
+    }
+}
